@@ -1,15 +1,56 @@
-# Building Agents with the Google Agent Developer Kit
+# Google Agent Developer Kit - Projects & Examples
 
-Welcome to the Google Agent Developer Kit (ADK) repository Learning & Practice! This project provides tools and resources to help developers create intelligent agents that can interact with users in a natural and effective manner.
+A collection of AI agent examples built with the [Google Agent Developer Kit (ADK)](https://google.github.io/adk-docs/). This repository demonstrates various agent architectures and use cases using Gemini 2.0 Flash.
 
-[Google Agent Developer Kit](https://google.github.io/adk-docs/) is an open-source framework designed to simplify the process of building, testing, and deploying conversational agents. Whether you're creating a chatbot for customer support, a virtual assistant, or any other type of interactive agent, ADK offers a comprehensive set of features to get you started.
+## Projects
 
+### 1. **Parallel Agent**
+Multi-platform content generation pipeline that runs multiple content generators simultaneously:
+- Tweet Generator (Twitter/X)
+- Instagram Caption Generator
+- Blog Post Intro Generator
+- Content Consolidator (aggregates outputs)
 
-## What I Learned
-- **Understanding Agent Architecture**: Gained insights into the architecture of conversational agents and how different components interact.
+### 2. **Sequential Agent**
+Content ideation pipeline with step-by-step workflow:
+- Idea Generator (brainstorms content ideas)
+- Content Creator (develops full content)
+- Optimizer (refines and improves)
 
+### 3. **Function Tools Agent**
+User profile fetcher with external API integration:
+- Fetches user data from JSONPlaceholder API
+- Formats profiles into Markdown
+- Demonstrates tool chaining and error handling
 
-## What I Practiced
-- **Simple Travel Agent**: Built a simple travel agent that gives users information about local attractions, restaurants, and hotels based on their preferences.
+### 4. **Travel Advisor**
+Travel planning assistant with custom tools:
+- Distance calculator between cities
+- Restaurant recommendations
+- Hotel finder
+- Itinerary planner
 
-- **Youtube Helper Agent**: Created a Youtube Helper agent that suggests video ideas, provides video optimization tips, and helps with content planning for YouTube creators.
+### 5. **YouTube Helper**
+YouTube content strategy assistant:
+- Video idea generator based on trends
+- Title optimizer for SEO
+- Description writer
+- Thumbnail suggestions
+
+### 6. **Loop Agent** & **Built-in Tools**
+Additional examples exploring ADK capabilities and standard tool usage.
+
+## Architecture Patterns
+
+- **LlmAgent**: Individual AI agents with specific instructions
+- **ParallelAgent**: Run multiple agents concurrently
+- **SequentialAgent**: Chain agents with dependent workflows
+
+## Key Features
+
+✓ Tool integration and chaining
+✓ Error handling and validation
+✓ Markdown formatting
+✓ Multi-platform content generation
+✓ Custom tool implementations
+✓ API integration examples
